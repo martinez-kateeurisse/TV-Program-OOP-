@@ -4,12 +4,16 @@
 
 #Import python file (Class - TV)
 
-#Create Objects
-def __init__ (self, channel, volume_level, on):
-    self.channel = channel
-    self.volume_level = volume_level
-    self.on = on
-#Create Methods
+class TV:
+    #Create Objects
+    def __init__ (self, channel, volume_level, on):
+        self.channel = channel
+        self.volume_level = volume_level
+        self.on = on
+
+#Assign values
+tv1 = TV(30, 3, "on")
+tv2 = TV(3, 2, "on")
 #Call methods
 
 #The current channel (1 to 120) of this TV.
