@@ -5,6 +5,10 @@
 #Import python file (Class - TV)
 
 #Create Objects
+def __init__ (self, channel, volume_level, on):
+    self.channel = channel
+    self.volume_level = volume_level
+    self.on = on
 #Create Methods
 #Call methods
 
