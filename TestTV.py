@@ -11,6 +11,12 @@ class TV:
         self.volume_level = volume_level
         self.on = on
 
+    #Create Methods
+    def tv1(self):
+        return "tv1's channel is" + self.channel , "and volume level is" + self.volume_level 
+    def tv2(self):
+        return "tv2's channel is" + self.channel , "and volume level is" + self.volume_level 
+    
 #Assign values
 tv1 = TV(30, 3, "on")
 tv2 = TV(3, 2, "on")
