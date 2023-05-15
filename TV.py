@@ -9,9 +9,12 @@ def __init__ (self, channel, volume_level, on):
     self.channel = channel
     self.volume_level = volume_level
     self.on = on
+
 #Turns on this TV.
+def tvOn(self):
+    self.on = True
 #Turns off this TV.
-#Returns the channe; for this TV.
+#Returns the channel for this TV.
 #Sets a new volume level for this TV.
 #Increases the channel number by 1.
 #Decreases the channel number by 1.
