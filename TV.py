@@ -14,6 +14,8 @@ def __init__ (self, channel, volume_level, on):
 def tvOn(self):
     self.on = True
 #Turns off this TV.
+def tvOff(self):
+    self.on = False
 #Returns the channel for this TV.
 #Sets a new volume level for this TV.
 #Increases the channel number by 1.
