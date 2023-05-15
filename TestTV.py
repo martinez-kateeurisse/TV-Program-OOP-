@@ -2,13 +2,13 @@
 
 #Import class file
 #from TV import television
-from TV import television
-TV = television()
+from Television import TV
+#TV = TV()
 
 #Assign values
-tv1 = television(30, 3, "on")
-tv1 = television(3, 2, "on")
+tv1 = TV(30, 3, "on")
+tv2 = TV(3, 2, "on")
 #Call methods
-tv1 = television()
+
 print(tv1)
 #Print output
