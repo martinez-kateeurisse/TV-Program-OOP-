@@ -25,3 +25,19 @@ def getChannel(self):
 #Decreases the channel number by 1.
 #Increases the volume level by 1.
 #Decreases the volume level by 1.
+
+#channel: int
+#volume_level: int
+#on: boolean
+
+#TV ()
+#turnOn(): None
+#turnOff(): None
+#getChannel(): int
+#setChannel (channel: int): None
+#getVolume(): int
+#setVolume (volumeLevel: int): None
+#channelUp(): None
+#channelDown(): None
+#volumeUp(): None
+#volumeDown(): None
