@@ -22,6 +22,9 @@ def getChannel(self):
 #Sets a new channel for this TV.
 def setChannel(self):
     self.channel = input(int("Channel: "))
+#Gets the volume level for this TV.
+def getVolume(self):
+    print("Volume level:" + self.volume_level)
 #Sets a new volume level for this TV.
 #Increases the channel number by 1.
 #Decreases the channel number by 1.
