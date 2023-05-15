@@ -38,7 +38,10 @@ def channelDown(self):
 def volumeUp(self):
     volume_up = self.volume_level + 1
 #Decreases the volume level by 1.
+def volumeDown(self):
+    volume_down = self.volume_level - 1
 
+    
 #channel: int
 #volume_level: int
 #on: boolean
