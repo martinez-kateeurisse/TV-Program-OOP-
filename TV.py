@@ -29,6 +29,8 @@ def getVolume(self):
 def setVolume(self):
     self.volume_level = input(int("Volume Level: "))
 #Increases the channel number by 1.
+def channelUp(self):
+    channel_up = self.channel + 1
 #Decreases the channel number by 1.
 #Increases the volume level by 1.
 #Decreases the volume level by 1.
