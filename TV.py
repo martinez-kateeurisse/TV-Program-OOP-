@@ -5,6 +5,10 @@
 #Indicates whether this TV is on/off.
 
 #Constructs a default TV object.
+def __init__ (self, channel, volume_level, on):
+    self.channel = channel
+    self.volume_level = volume_level
+    self.on = on
 #Turns on this TV.
 #Turns off this TV.
 #Returns the channe; for this TV.
