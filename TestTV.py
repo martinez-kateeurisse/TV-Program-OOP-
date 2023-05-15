@@ -4,5 +4,7 @@
 import TV
 
 #Assign values
+tv1 = TV(30, 3, "on")
+tv1 = TV(3, 2, "on")
 #Call methods
 #Print output
