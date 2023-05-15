@@ -20,7 +20,7 @@ class TV:
         self.on = False
     #Returns the channel for this TV.
     def get_channel(self):
-        print("channel " + str(self.channel))
+        return self.channel
     #Sets a new channel for this TV.
     def set_channel(self, channel):
         #self.channel = input(int("Channel: "))
@@ -28,7 +28,7 @@ class TV:
             self.channel = channel
     #Gets the volume level for this TV.
     def get_volume(self):
-        print("Volume level:" + str(self.volume_level))
+        return self.volume_level
     #Sets a new volume level for this TV.
     def set_volume(self, volume_level):
         #self.volume_level = input(int("Volume Level: "))
@@ -59,11 +59,7 @@ class TV:
         else:
             self.channel = 7
 
-television1 = TV()
-television1.tv_on()
-television1.set_channel(30)
-television1.set_volume(3)
-print(television1.get_channel(), television1.get_volume())
+
 #tv1 = TV(30, 3, "on")
 #tv2 = TV(3, 2, "on")
 #Call methods
