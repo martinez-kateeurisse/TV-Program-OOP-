@@ -1,10 +1,5 @@
 #Kate Eurisse L. Martinez_BSCPE 1-5_Test Driver program
 
-#Displaying output through pygame
-#Import modules 
-import pygame
-import sys
-
 #Import class file
 from Television import TV
 
@@ -31,3 +26,16 @@ tv2.set_volume(2)
 
 #Print output for tv 2
 print("tv2's channel is " + tv2.get_channel(), "and volume level is " +  tv2.get_volume())
+
+#Displaying output through pygame
+#Import modules 
+import pygame
+import sys
+
+#Initialize variables
+#Initialize display format(dimension)
+#Set text formats(font and color), position and background
+#Run the program in pygame
+#Use a loop to run the program
+
+#The output of the program will be displayed in the pygame window
