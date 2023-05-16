@@ -39,7 +39,14 @@ window_width = 550
 window_height = 350
 display = pygame.display.set_mode((window_width,window_height))
 #Set text formats(font and color), position and background
+
 #Run the program in pygame
 #Use a loop to run the program
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+    pygame.display.update()
 
 #The output of the program will be displayed in the pygame window
