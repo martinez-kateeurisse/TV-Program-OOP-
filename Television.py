@@ -23,9 +23,12 @@ class TV:
     
     #Sets a new channel for this TV.
     def set_channel(self, channel):
-        #If statement
-        if self.channel >= 1 and channel <= 120:
-            self.channel = channel
+        try:
+            #If statement
+            if self.channel >= 1 and channel <= 120:
+                self.channel = channel
+        except:
+            print("Invalid channel: Channel should only be between 1 to 120")
     
     #Gets the volume level for this TV.
     def get_volume(self):
@@ -33,9 +36,12 @@ class TV:
     
     #Sets a new volume level for this TV.
     def set_volume(self, volume_level):
-        #If statement
-        if self.volume_level >= 1 and volume_level <= 7:
-            self.volume_level = volume_level
+        try:
+            #If statement
+            if self.volume_level >= 1 and volume_level <= 7:
+                self.volume_level = volume_level
+        except:
+            print("Invalid volume: Volume should only be between 1 to 7")
     
     #Increases the channel number by 1.
     def channel_up(self):
