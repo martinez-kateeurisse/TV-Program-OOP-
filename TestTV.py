@@ -1,5 +1,10 @@
 #Kate Eurisse L. Martinez_BSCPE 1-5_Test Driver program
 
+#Displaying output through pygame
+#Import modules 
+import pygame
+import sys
+
 #Import class file
 from Television import TV
 
