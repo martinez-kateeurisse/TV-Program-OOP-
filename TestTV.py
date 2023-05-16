@@ -13,7 +13,7 @@ tv1.set_channel(30)
 tv1.set_volume(3)
 
 #Print output for tv 1
-print("tv1's channel is " + tv1.get_channel(), "and volume level is " +  tv1.get_volume())
+tv1 = print("tv1's channel is " + tv1.get_channel(), "and volume level is " +  tv1.get_volume())
 
 #Call methods for tv2
 tv2 = TV()
@@ -25,7 +25,7 @@ tv2.set_channel(3)
 tv2.set_volume(2)
 
 #Print output for tv 2
-print("tv2's channel is " + tv2.get_channel(), "and volume level is " +  tv2.get_volume())
+tv2 = print("tv2's channel is " + tv2.get_channel(), "and volume level is " +  tv2.get_volume())
 
 #Displaying output through pygame
 #Import modules 
@@ -38,7 +38,13 @@ pygame.init
 window_width = 550
 window_height = 350
 display = pygame.display.set_mode((window_width,window_height))
+
 #Set text formats(font and color), position and background
+output_font = pygame.font.SysFont("Arial", 30)
+output_text = output_font.render(tv1, tv2, True, (250,250,250))
+text_rect = output_text.get_rect()
+text_rect.center = (window_width//2, window_height//2)
+background = pygame.image.load("White")
 
 #Run the program in pygame
 #Use a loop to run the program
