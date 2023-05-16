@@ -40,11 +40,11 @@ window_height = 350
 display = pygame.display.set_mode((window_width,window_height))
 
 #Set text formats(font and color), position and background
-output_font = pygame.font.SysFont("Arial", 30)
+output_font = pygame.font.Font("Gameshow.otf", 30)
 output_text = output_font.render(tv1, tv2, True, (250,250,250))
 text_rect = output_text.get_rect()
 text_rect.center = (window_width//2, window_height//2)
-background = pygame.image.load("White")
+background = pygame.image.load("background.jpg")
 
 #Run the program in pygame
 #Use a loop to run the program
@@ -53,6 +53,10 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+    display.fill((0,0,0))
+    display.blit(background, (0,0))
+    display.blit(output_text, text_rect)
     pygame.display.update()
+
 
 #The output of the program will be displayed in the pygame window
