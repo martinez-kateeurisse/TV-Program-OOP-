@@ -1,7 +1,6 @@
 #Kate Eurisse L. Martinez_BSCPE 1-5_Test Driver program
 
 #Import class file
-#from TV import television
 from Television import TV
 
 #call methods for tv1
