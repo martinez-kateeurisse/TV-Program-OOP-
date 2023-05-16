@@ -30,10 +30,13 @@ tv2 = print("tv2's channel is " + tv2.get_channel(), "and volume level is " +  t
 #Displaying output through pygame
 #Import modules 
 import pygame
+from pygame.locals import *
 import sys
 
 #Initialize variables
 pygame.init
+pygame.font.init()
+
 #Initialize window display format(dimension)
 window_width = 550
 window_height = 350
@@ -57,6 +60,5 @@ while True:
     display.blit(background, (0,0))
     display.blit(output_text, text_rect)
     pygame.display.update()
-
 
 #The output of the program will be displayed in the pygame window
